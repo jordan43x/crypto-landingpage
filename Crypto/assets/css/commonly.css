@@ -1,0 +1,114 @@
+:root{
+    --black: #000;
+    --white: #ffff;
+    --lightgrey: #f1f1f1;
+    --darkblue: #0d102c;
+    --primarycolor: #3d51f2;
+    --secondarycolor: #5670ef;
+    --lightDark: #080A25;
+    --darkText: #838884;
+}
+
+body{
+    background: var(--darkblue);
+    color:var(--white);
+}
+
+/*style common for all */
+
+section{
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 2em;
+}
+.gridSection{
+    display: grid;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 5px;
+}
+#sectionPic{
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+}
+.sectionPic img{
+    width: 100%;
+}
+
+@keyframes bounce {
+    0% {transform: translateY(-30px);}
+    50% {transform: translateY(30px);}
+    100% {transform: translateY(-30px);}
+}
+
+.bouncepic img{
+    animation: bounce 5s infinite;
+}
+.btn{
+    border: 1px solid #fff;
+    border-radius: 50px;
+    background: transparent;
+    color: var(--white);
+    font-size: 1.1rem;
+    padding: .7em 1.5em;
+    cursor: pointer;
+}
+.btn1{
+    margin-right: 1rem;
+}
+.btn2{
+    border: none;
+}
+
+.primaryBtn{
+    background-color: var(--primarycolor);
+}
+
+
+.sectionHeader{
+    font-size: 2rem;
+    margin-bottom: .7em;
+}
+.sectionPara{
+    font-size: 1.1rem;
+    margin-bottom: 3em;
+    line-height: 25px;
+}
+.gridSection .eachProcesses p{
+    line-height: 25px;
+}
+.darkPara{
+    color: var(--darkText);
+    font-weight: 500;
+    line-height: 25px;
+    font-size: 18px;
+}
+.sectionHeader1{
+    font-size: 2rem;
+    margin-bottom: .7em;
+    padding-left: 3em;
+}
+.sectionPara2{
+    font-size: 1.1rem;
+    margin-bottom: 3em;
+    line-height: 25px;
+    margin-left: 5.8em;
+}
+.btn3{
+    border: 1px solid #fff;
+    border-radius: 50px;
+    background: transparent;
+    color: var(--white);
+    font-size: 1.1rem;
+    padding: .7em 1.5em;
+    cursor: pointer;
+    margin-left: 5.5em;
+    background-color: #3d51f2;
+}
+@media screen and (min-width: 1000px) {
+    .sectionHeader{
+        font-size: 3rem;
+    }
+}
